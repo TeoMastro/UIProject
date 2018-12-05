@@ -18,6 +18,7 @@ public class MainForm extends javax.swing.JFrame {
      */
     public MainForm() {
         initComponents();
+        commentsAboutTextArea.setEditable(false);
     }
 
     /**
@@ -100,7 +101,7 @@ public class MainForm extends javax.swing.JFrame {
         jTable14 = new javax.swing.JTable();
         about = new javax.swing.JPanel();
         jScrollPane9 = new javax.swing.JScrollPane();
-        commentsFullTextArea4 = new javax.swing.JTextArea();
+        commentsAboutTextArea = new javax.swing.JTextArea();
         homerPhoto = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         menuButton = new javax.swing.JButton();
@@ -716,11 +717,11 @@ public class MainForm extends javax.swing.JFrame {
 
         about.setBackground(new java.awt.Color(166, 187, 255));
 
-        commentsFullTextArea4.setColumns(20);
-        commentsFullTextArea4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        commentsFullTextArea4.setRows(5);
-        commentsFullTextArea4.setText("Ονομάζομαι Μαστρομανώλης Θεόδωρος , είμαι 19 ετών και ανέπτυξα\nτη συγκεκριμένη εφαρμογή στα πλαίσια του μαθήματος \"Αλληλεπίδραση\nΑνθρώπου-Μηχανής\" , του 3ου εξαμήνου των σπουδών μου. Στη συγκε-\nκριμένη εφαρμογή , τα προγράμματα γυμναστικής που χρησιμοποίησα \nτα πήρα από την ιστοσελίδα : https://www.examplepage.com . Αν έχετε\nπεραιτέρω απορίες σχετικά με τη χρήση της εφαρμογής , ή έχετε βρει\nκάτι που δε δουλεύει σωστά μέσα σε αυτή , θα σας παρακαλούσα να \nεπικοινωνήσετε μαζί μου στο teomastro1999@gmail.com , έτσι ώστε να \nεπιλύσω το πρόβλημα όσο το δυνατόν γίνεται πιο γρήγορα.");
-        jScrollPane9.setViewportView(commentsFullTextArea4);
+        commentsAboutTextArea.setColumns(20);
+        commentsAboutTextArea.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        commentsAboutTextArea.setRows(5);
+        commentsAboutTextArea.setText("Ονομάζομαι Μαστρομανώλης Θεόδωρος , είμαι 19 ετών και ανέπτυξα\nτη συγκεκριμένη εφαρμογή στα πλαίσια του μαθήματος \"Αλληλεπίδραση\nΑνθρώπου-Μηχανής\" , του 3ου εξαμήνου των σπουδών μου. Στη συγκε-\nκριμένη εφαρμογή , τα προγράμματα γυμναστικής που χρησιμοποίησα \nτα πήρα από την ιστοσελίδα : https://www.examplepage.com . Αν έχετε\nπεραιτέρω απορίες σχετικά με τη χρήση της εφαρμογής , ή έχετε βρει\nκάτι που δε δουλεύει σωστά μέσα σε αυτή , θα σας παρακαλούσα να \nεπικοινωνήσετε μαζί μου στο teomastro1999@gmail.com , έτσι ώστε να \nεπιλύσω το πρόβλημα όσο το δυνατόν γίνεται πιο γρήγορα.");
+        jScrollPane9.setViewportView(commentsAboutTextArea);
 
         homerPhoto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/homer.png"))); // NOI18N
 
@@ -899,9 +900,9 @@ public class MainForm extends javax.swing.JFrame {
     private javax.swing.JButton commentWeights1Button;
     private javax.swing.JButton commentWeights2Button;
     private javax.swing.JButton commentWomenButton;
+    private javax.swing.JTextArea commentsAboutTextArea;
     private javax.swing.JTextArea commentsAerobicsTextArea;
     private javax.swing.JTextArea commentsFullTextArea;
-    private javax.swing.JTextArea commentsFullTextArea4;
     private javax.swing.JTextArea commentsWeights1TextArea;
     private javax.swing.JTextArea commentsWeights2TextArea;
     private javax.swing.JTextArea commentsWomenTextArea;
